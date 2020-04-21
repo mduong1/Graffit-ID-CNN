@@ -1,4 +1,5 @@
-# Graffit-ID-CNN
+# Graffiti ID
+![Image description](/images/G4.jpeg)
 
 Graffiti Artwork Classification of 16 artists
 
