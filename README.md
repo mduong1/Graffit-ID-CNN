@@ -1,7 +1,7 @@
 # Identifying Graffiti Artwork using Deep Learning
-*click on G icon to view presentation video
-[![Mock up app icon](/images/G4.jpeg)](https://youtu.be/txwfqmuV4MQ)
 
+[![Mock up app icon](/images/G4.jpeg)](https://youtu.be/txwfqmuV4MQ)
+*click on G icon to view presentation video
 [👉 Link to Presentation slides](https://docs.google.com/presentation/d/1pV53Yb_4DMiDk8K0tzbnd-Cba619UyFFFWyFevzH5O4/edit?usp=sharing)
 ## Motivation
 
