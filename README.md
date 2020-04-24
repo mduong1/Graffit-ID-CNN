@@ -9,7 +9,7 @@ Lower East Side (LES) NYC has been my home for most of my adult life. What makes
 
 ## Objective
 Using Keras library utilities, apply transfer learning via pre-trained VGG16 convolutional Neural Network model to classify artwork from 16 graffiti artists.
-Train a model that predicts the artist based on unseen sample graffiti artworks.
+Train a model that predicts the artist based on unseen graffiti samples.
 
 ## Methodology
 The 4 main steps of this project were: 
@@ -45,9 +45,11 @@ The confusion matrix not only helped to easily see where the model was right and
 
 
 ### Conclusion
-Inspite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimatization of the model are as follows:
-- Too few dense units while low in complexity results in lower accuracy and shows underfitting while higher dense units with greater complexity but more overfitting and did no better than baseline model of 256 units.
-- 
+Inspite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimatization of the model are:
+- Too few dense units while low in complexity results in lower accuracy and shows underfitting while higher dense units with greater complexity but more overfitting and was no better than baseline model of 256 units.
+- A small or too high value of dropout regularization does not improve from the baseline accuracy. This is probably due to hidden layers depending a lot on particular features and overfitting or too high drop out results in under-learning.  
+- RMSProp and Adam had similar accuracy scores whereas SGD performed poorly.
+- Adding dense layers gave the worst accuracy score. With a small dataset, adding additional layers increases complexity and overfits.
 
 ## Acknowledgments
 
