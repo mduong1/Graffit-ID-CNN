@@ -5,14 +5,18 @@
 [👉 Link to Presentation slides](https://docs.google.com/presentation/d/1pV53Yb_4DMiDk8K0tzbnd-Cba619UyFFFWyFevzH5O4/edit?usp=sharing)
 
 ## Motivation
-
+Lower East Side (LES) NYC has been my home for most of my adult life. What makes LES an attractive place is the abundance of graffiti artwork everywhere which gives the neighborhood a gritty, youthful and hip vibe. I enjoy strolling through my neighborhood and taking pictures of the wide range graffiti styles. I wondered if I could use computer vision and machine learning techniques for artist classification and allow me to learn more about the artist. 
 
 ## Objective
-Using Keras library utilities, applied transfer learning via pre-trained VGG16 convolutional Neural Network model to classify artwork from 16 graffiti artists.
-Train a model that predicts the artist based on an unseen sample graffiti artwork.
+Using Keras library utilities, apply transfer learning via pre-trained VGG16 convolutional Neural Network model to classify artwork from 16 graffiti artists.
+Train a model that predicts the artist based on unseen sample graffiti artworks.
 
 ## Methodology
-
+The 4 main steps of this project were: 
+- Perform feature extraction by leveraging a pre-trained convolution base of VGG16 model. 
+- Feed the extracted features to a densely connected classifier to get accuracy results for a base model.
+- Fine tune the model by making adjustments to the dense units, dropout rate and adding more dense layers to improve the training, validation and test accuracy. 
+- Apply data augmentation to help against overfitting.
 
 
 ## Results
@@ -31,14 +35,19 @@ The following hyperparameters tunning did not improve the Top-1 Test accuracy sc
 - Adding a dense layer
 
 ### Top-3 Accuracy
-A more realistic performance metric to use is Top-3 Accuracy for the baseline model. The model predictions falls in the top three values 77% of the time.
+A more realistic and effective performance metric to use for this classification problem is Top-3 Accuracy. The baseline model predictions falls in the top three values 77% of the time.
 
 ### Confusion Matrix
-The confusion matrix not only helped to easily see where the model was right and wrong but it gave insight into the relationship between various artists. It's clear as to why the model did a good job of correctly predicting for the artists Daim, Keith Haring, Retna and Roa. All four artists style of art is singular whether it's all wild animals for Roa, Keith Haring's mostly bold outlines of figures or only bold hieroglyphs and calligraphy by Retna. The model was understandbly mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similaity to their pieces. The model completely misclassified Futura2000 due to his wide ranging art style.  
+The confusion matrix not only helped to easily see where the model was right and wrong but it gave insight into the relationship between various artists. 
+- It's clear as to why the model did a good job of correctly predicting for the artists Daim, Keith Haring, Retna and Roa. All four artists style of art is singular whether it's all wild animals for Roa, Keith Haring's mostly bold outlines of figures or only bold hieroglyphs and calligraphy by Retna. 
+- The model was understandbly mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similaity to their pieces. 
+- The model completely misclassified Futura2000 due to his wide ranging art style.
 
 
 ### Conclusion
-
+Inspite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimatization of the model are as follows:
+- Too few dense units while low in complexity results in lower accuracy and shows underfitting while higher dense units with greater complexity but more overfitting and did no better than baseline model of 256 units.
+- 
 
 ## Acknowledgments
 
