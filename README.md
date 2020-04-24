@@ -28,7 +28,7 @@ The best Top-1 accuracy score was 55% for the baseline model. The configurations
 - Drop out = 0.5
 - RMSprop Optimizer
 
-The following hyperparameters tunning did not improve the Top-1 Test accuracy score from the baseline model.
+The following hyperparameters tuning did not improve the Top-1 Test accuracy score from the baseline model.
 - Dense units of 128, dense units of 512
 - Drop out of 0.25, drop out of 0.60
 - Optimizer Adam, SGD
@@ -40,13 +40,13 @@ A more realistic and effective performance metric to use for this classification
 ### Confusion Matrix
 The confusion matrix not only helped to easily see where the model was right and wrong but it gave insight into the relationship between various artists. 
 - It's clear as to why the model did a good job of correctly predicting for the artists Daim, Keith Haring, Retna and Roa. All four artists style of art is singular whether it's all wild animals for Roa, Keith Haring's mostly bold outlines of figures or only bold hieroglyphs and calligraphy by Retna. 
-- The model was understandbly mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similaity to their pieces. 
+- The model was understandably mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similarity to their pieces. 
 - The model completely misclassified Futura2000 due to his wide ranging art style.
 
 
 ### Conclusion
-Inspite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimatization of the model are:
-- Too few dense units while low in complexity results in lower accuracy and shows underfitting while higher dense units with greater complexity but more overfitting and was no better than baseline model of 256 units.
+In-spite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimization of the model are:
+- Too few dense units while low in complexity results in lower accuracy and shows under-fitting while higher dense units with greater complexity but more overfitting and was no better than baseline model of 256 units.
 - A small or too high value of dropout regularization does not improve from the baseline accuracy. This is probably due to hidden layers depending a lot on particular features and overfitting or too high drop out results in under-learning.  
 - RMSProp and Adam had similar accuracy scores whereas SGD performed poorly.
 - Adding dense layers gave the worst accuracy score. With a small dataset, adding additional layers increases complexity and overfits.
