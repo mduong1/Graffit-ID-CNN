@@ -5,7 +5,7 @@
 [👉 Link to Presentation slides](https://docs.google.com/presentation/d/1pV53Yb_4DMiDk8K0tzbnd-Cba619UyFFFWyFevzH5O4/edit?usp=sharing)
 
 ## Motivation
-Lower East Side (LES) NYC has been my home for most of my adult life. What makes LES an attractive place is the abundance of graffiti artwork everywhere which gives the neighborhood a gritty, youthful and hip vibe. I enjoy strolling through my neighborhood and taking pictures of the wide range graffiti styles. I wondered if I could use computer vision and machine learning techniques for artist classification and allow me to learn more about the artist. 
+Lower East Side (LES) NYC has been my home for most of my adult life. What makes LES an interesting place to live is the abundance of graffiti artwork which gives the neighborhood a gritty, youthful and hip vibe. I enjoy strolling through my neighborhood and taking pictures of the wide range of graffiti styles. I wondered how computer vision and machine learning techniques can help to classify graffiti artwork and enable me to learn more about the artists. 
 
 ## Objective
 Using Keras library utilities, apply transfer learning via pre-trained VGG16 convolutional Neural Network model to classify artwork from 16 graffiti artists.
@@ -44,10 +44,10 @@ The confusion matrix not only helped to easily see where the model was right and
 - The model completely misclassified Futura2000 due to his wide ranging art style.
 
 
-### Conclusion
+## Conclusion
 In-spite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimization of the model are:
 - Too few dense units while low in complexity results in lower accuracy and shows under-fitting while higher dense units with greater complexity but more overfitting and was no better than baseline model of 256 units.
-- A small or too high value of dropout regularization does not improve from the baseline accuracy. This is probably due to hidden layers depending a lot on particular features and overfitting or too high drop out results in under-learning.  
+- A small value of dropout regularization does not improve from the baseline accuracy. This is probably due to hidden layers depending a lot on particular features and overfitting or too high drop out results in under-learning.  
 - RMSProp and Adam had similar accuracy scores whereas SGD performed poorly.
 - Adding dense layers gave the worst accuracy score. With a small dataset, adding additional layers increases complexity and overfits.
 
