@@ -5,7 +5,7 @@
 [👉 Link to Presentation slides](https://docs.google.com/presentation/d/1pV53Yb_4DMiDk8K0tzbnd-Cba619UyFFFWyFevzH5O4/edit?usp=sharing)
 
 ## Motivation
-Lower East Side (LES) NYC has been my home for most of my adult life. What makes LES an interesting place to live is the abundance of graffiti artwork which gives the neighborhood a gritty, youthful and hip vibe. I enjoy strolling through my neighborhood and taking pictures of the wide range of graffiti styles. I wondered how computer vision and machine learning techniques can help to classify graffiti artwork and enable me to learn more about the artists. 
+Lower East Side (LES) NYC has been my home for most of my adult life. What makes LES an interesting place to live is the abundance of graffiti artwork which gives the neighborhood a gritty, youthful and hip vibe. I enjoy strolling through my neighborhood and taking pictures of the wide range of graffiti styles. During one of those walks, I wondered how computer vision and machine learning techniques can help to classify graffiti artwork and enable me to learn more about the artists. 
 
 ## Objective
 Using Keras library utilities, apply transfer learning via pre-trained VGG16 convolutional Neural Network model to classify artwork from 16 graffiti artists.
