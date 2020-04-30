@@ -26,16 +26,16 @@ The best Top-1 accuracy score was 55% for the baseline model. The configurations
 - 2 Dense Layers
 - Batch size = 20
 - Drop out = 0.5
-- RMSprop Optimizer
+- Adam Optimizer
 
 The following hyperparameters tuning did not improve the Top-1 Test accuracy score from the baseline model.
 - Dense units of 128, dense units of 512
 - Drop out of 0.25, drop out of 0.60
-- Optimizer Adam, SGD
+- Optimizer SGD
 - Adding a dense layer
 
 ### Top-3 Accuracy
-A more realistic and effective performance metric to use for this classification problem is Top-3 Accuracy. The baseline model predictions falls in the top three values 77% of the time.
+A more realistic and effective performance metric to use for this classification problem is Top-3 Accuracy. The baseline plus Adam optmizer model predictions falls in the top three values 77% of the time.
 
 ### Confusion Matrix
 The confusion matrix not only helped to easily see where the model was right and wrong but it gave insight into the relationship between various artists. 
