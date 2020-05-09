@@ -21,7 +21,7 @@ The 4 main steps of this project were:
 
 ## Results
 ### Top-1 Accuracy
-The best Top-1 accuracy score was 55% for the baseline model. The configurations for the base line model is as follows: 
+The best Top-1 accuracy score was 55% for the baseline model. The configurations for the base line model are: 
 - No image augmentation
 - 2 Dense Layers
 - Batch size = 20
@@ -40,13 +40,13 @@ A more realistic and effective performance metric to use for this classification
 ### Confusion Matrix
 The confusion matrix not only helped to easily see where the model was right and wrong but it gave insight into the relationship between various artists. 
 - It's clear as to why the model did a good job of correctly predicting for the artists Daim, Keith Haring, Retna and Roa. All four artists style of art is singular whether it's all wild animals for Roa, Keith Haring's mostly bold outlines of figures or only bold hieroglyphs and calligraphy by Retna. 
-- The model was understandably mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similarity to their pieces. 
+- The model was mixed up between Banksy and Ble le Rat. Further investigation revealed that Banksy was inspired by Blek le Rat and thus both share visual similarity to their pieces. 
 - The model completely misclassified Futura2000 due to his wide ranging art style.
 
 
 ## Conclusion
 In-spite of having a small dataset and large number of classes, the model worked well to understand the stylistic patterns associated with the 16 artists. What I learned from optimization of the model are:
-- Too few dense units while low in complexity results in lower accuracy and shows under-fitting while higher dense units with greater complexity but more overfitting and was no better than baseline model of 256 units.
+- Too few dense units while low in complexity results in lower accuracy and shows under-fitting while higher dense units with greater complexity was more prone to overfitting and was no better than baseline model of 256 units.
 - A small value of dropout regularization does not improve from the baseline accuracy. This is probably due to hidden layers depending a lot on particular features and overfitting or too high drop out results in under-learning.  
 - RMSProp and Adam had similar accuracy scores whereas SGD performed poorly.
 - Adding dense layers gave the worst accuracy score. With a small dataset, adding additional layers increases complexity and overfits.
