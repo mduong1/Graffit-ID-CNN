@@ -55,7 +55,7 @@ In-spite of having a small dataset and large number of classes, the model worked
 
 - The artwork images were scrapped by using URL links from https://github.com/rememberlenny/graffiti-net/tree/master/_urls .
 - This project uses approaches and tools from Chapter 5, section 3 of Francois Chollet "Deep Learning with Python".
-- Major thanks goes to Joe Eddy, Kim Fessel and Vinny Senguttuvan for their guidance.
+- Major thanks to Joe Eddy, Kim Fessel and Vinny Senguttuvan at Metis for their guidance.
 - The G4 icon image was obtained from google search.
 
 
